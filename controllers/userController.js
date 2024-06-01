@@ -32,8 +32,7 @@ const registerUser = async (req, res) => {
   }
   res.json({ message: "Register the user" });
 };
-console.log(`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoic2Vjb25kIiwiZW1haWwiOiJzZWNvbmRAZ21haWwuY29tIiwiaWQiOiI2NjViMGU0MDEzZTQ4YmFjMGE1MDU0MmEifSwiaWF0IjoxNzE3MjQ5OTM5LCJleHAiOjE3MTcyNTA4Mzl9.VdIV1Gr6b6M18A3atVlXD4R14AMUrPReKAbjd5BYpkw`,
-`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiZmlyc3QiLCJlbWFpbCI6ImZpcnN0QGdtYWlsLmNvbSIsImlkIjoiNjY1YjBkMzcwZmRlMGRjODcxMWZiYjg5In0sImlhdCI6MTcxNzI1MDIxNywiZXhwIjoxNzE3MjUxMTE3fQ.EWEMSuwjqcr3CUe_LxI9kJUuncKAmLTC3ehZ7m27ByY`)
+
 const loginUser = async (req, res) => {
   const { email, password } = req.body;
   if (!email || !password) {
